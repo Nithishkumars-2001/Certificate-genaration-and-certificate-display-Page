@@ -55,21 +55,40 @@ body{
 }
 
 .content{
+    height: auto;
+    background-color: wheat;
+    padding-bottom: 20px;
+}
+
+.cert-complt-title{
+    padding: 20px 0 0 30px;
+}
+
+.cert-complt-title h4 i{
+    color: rgb(21, 198, 21);
+}
+
+.cert-complt-title p{
+    padding-top: 5px;
+}
+
+.input-certificate-box{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 92vh;
 }
 
 /* Input Box */
 
 .input-box{
-    width: 300px;
+    width: 350px;
     height: 500px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: aliceblue;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
+    overflow: auto;
+    margin-top: 40px;
 }
 
 .input-box h5{
@@ -90,6 +109,10 @@ body{
     font-weight: 700;
 }
 
+.user-input label span {
+    color: red;
+}   
+
 .user-input input{
     width: 100%;
     outline: none;
@@ -105,8 +128,8 @@ body{
 .down-btn{
     float: right;
     margin-top: 30px;
-    width: 200px;
-    height: 35px;
+    width: 220px;
+    height: 40px;
     border: none;
     background-color: tomato;
     color: #fff;
@@ -115,6 +138,82 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-shadow: 0.5px 0.5px 1px black;
 }
+
+.share-certificate{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.share-certificate i{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.share-certificate #inkedin{
+    font-size: 20px;
+    padding: 10px 13px;
+    color: #fff;
+    background-color: rgb(0, 106, 255);
+    border-radius: 50%;
+}
+
+.share-certificate #facebook{
+    font-size: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.share-certificate #twitter{
+    font-size: 20px;
+    padding: 10px 13px;
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.share-certificate #instagram{
+    font-size: 20px;
+    padding: 10px 13px;
+    color: #fff;
+    background: linear-gradient( 45deg, yellow, red, rgb(233, 6, 233), rgb(243, 8, 117));
+    border-radius: 50%;
+}
+
+.share-certificate #threds{
+    font-size: 20px;
+    padding: 10px 13px;
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.share-certificate #gmail{
+    font-size: 20px;
+    padding: 10px 13px;
+    color: red;
+    background-color: wheat;
+    border-radius: 50%;
+}
+
+.share-certificate #whatsapp{
+    font-size: 20px;
+    padding: 10px 13px;
+    color: #fff;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.update-linkedin{
+    margin-top: 85px;
+}
+
+.input-box::-webkit-scrollbar{
+    display: none;
+}
+
 
 /* Certificate Box */
 
@@ -125,6 +224,7 @@ body{
     background-image: url(certificate\ bg.jpg);
     background-position: center;
     background-size: cover;
+    margin-top: 20px;
 }
 
 .ribbon-logo{
@@ -164,7 +264,7 @@ body{
 .cert-content{
     width: 886px;
     height: 470px;
-    margin-top: -95px;
+    margin-top: -80px;
     text-align: center;
 }
 
@@ -183,13 +283,13 @@ body{
 }
 
 .line{
-    width: 120px;
+    width: 100px;
     height: 3px;
     background-color: tomato;
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    margin: -5px 0 0 340px;
+    margin: -5px 0 0 350px;
 }
 
 .cert-stud-details p{
@@ -207,6 +307,7 @@ body{
 .cert-bottom-content{
     display: flex;
     align-items: center;
+    margin-top: -20px;
 }
 
 .date-id{
@@ -227,7 +328,7 @@ body{
 .cert-bottom-content img{
     width: 150px;
     height: 150px;
-    margin-left: 115px;
+    margin-left: 105px;
 }
 
 .founder-name{
@@ -263,14 +364,13 @@ body{
         font-size: 12px;
     }
 
-    .content{
+    .input-certificate-box{
         display: inline-block;
-        height: 150vh;
     }
 
     .input-box{
         width: 350px;
-        margin: 40px 0 0 20px;
+        margin: 20px 0 0 20px;
     }
 
     .certificate-box{
